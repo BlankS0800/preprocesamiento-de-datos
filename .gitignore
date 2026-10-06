@@ -1,0 +1,15 @@
+# Archivos de datos brutos de gran tamaño (no indispensables para el sitio web)
+persona.csv
+
+# Archivos temporales de bloqueo de Microsoft Word
+~$*.docx
+*.tmp
+
+# Borradores redundantes anteriores
+INFORME_PREPROCESAMIENTO_EMPLEO_FORMAL.docx
+
+# Archivos de sistema y caché
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc

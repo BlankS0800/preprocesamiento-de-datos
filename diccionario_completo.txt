@@ -1,0 +1,65 @@
+Diccionario de Persona.csv
+Este conjunto de datos corresponde a la base de personas de la “Encuesta de Hogares (EH)” ejecutada por el “Instituto Nacional de Estadística (INE) de Bolivia”.
+Identificación Geográfica y Muestral
+`folio`: Identificador único de la vivienda/hogar.
+`area`: Área geográfica (1 = Urbana, 2 = Rural).
+`depto`: Código del departamento (1 = Chuquisaca, 2 = La Paz, 3 = Cochabamba, 4 = Oruro, 5 = Potosí, 6 = Tarija, 7 = Santa Cruz, 8 = Beni, 9 = Pando).
+`nro`  : Número de orden asignado a cada integrante del hogar.
+`upm`  : Unidad Primaria de Muestreo.
+`estrato`  : Estrato de diseño muestral.
+`factor`  : Factor de expansión (ponderador de la persona).
+  Sección 1: Características Sociodemográficas (`s01a_` y `s01b_`)  
+`s01a_02`  : Parentesco con el/la jefe/a del hogar.
+`s01a_03`  : Sexo registrado del individuo.
+`s01a_04a` - `s01a_04c  `: Fecha de nacimiento (día, mes y año).
+`s01a_05` - `s01a_05c  `: Edad calculada en años cumplidos y meses.
+`s01a_06`  : Estado civil o conyugal.
+`s01a_07` - `s01a_09npioc  `: Autopertenencia a Naciones y Pueblos Indígena Originario Campesinos (NPIOC).
+`s01a_10`  : Idioma o lengua materna aprendida en la infancia.
+`s01b_11a` - `s01b_13b  `: Antecedentes de migración temporal y residencia habitual de 5 años atrás.
+  Sección 2: Salud y Discapacidad (`s02a_` a `s02d_`)  
+`s02a_01a` - `s02a_05  `: Registro de dolencias, atención médica requerida y gasto en salud durante los últimos 30 días.
+`s02b_06` - `s02b_14a  `: Evaluaciones de discapacidad permanente o movilidad reducida (grupo Washington).
+`s02c_15`  : Control prenatal e historial de gestación.
+`s02d_16` - `s02d_17a  `: Fecundidad y nacimientos dentro del hogar.
+`cobersalud`  : Afiliación o cobertura activa a un seguro de salud.
+`hnv_ult_a`  : Hijos nacidos vivos en el último año.
+`quienatenparto`  : Tipo de personal médico o capacitado que atendió el último parto.
+  Sección 3: Educación (`s03a_` a `s03c_`)  
+`s03a_01` - `s03a_09  `: Condición de alfabetismo, inscripción, nivel y último curso aprobado.
+`s03b_10` - `s03b_12  `: Tipo de establecimiento educativo (público/privado) y causas de no asistencia.
+`s03c_13` - `s03c_17e  `: Uso de Tecnologías de Información y Comunicación (TICs, acceso a internet, celular, PC).
+`niv_ed` / `niv_ed_g  `: Nivel educativo alcanzado (detallado y agrupado).
+`cmasi`  : Condición de asistencia escolar actual.
+`educ_prev`  : Nivel educativo del periodo anterior.
+`aestudio`  : Años efectivos de estudio acumulados.
+  Sección 4: Empleo y Mercado Laboral (`s04a_` a `s04f_`)  
+`s04a_01` - `s04a_08  `: Condición de ocupación en la última semana previa a la encuesta.
+`s04b_09a_cod` - `s04b_16ab  `: Ocupación principal, tareas realizadas y categoría ocupacional.
+`s04c_17a` - `s04c_21e2  `: Rama de actividad económica de la empresa o negocio principal.
+`s04d_22a` - `s04d_24bc  `: Horas semanales trabajadas, estabilidad laboral y aportes a AFPs.
+`s04e_25` - `s04e_30b  `: Ingresos monetarios y en especie provenientes de la ocupación principal.
+`s04f_31a` - `s04f_36  `: Ocupación secundaria e ingresos derivados.
+`cob_op`  : Código de la Ocupación Principal (Clasificador COB).
+`caeb_op` / `caeb_os  `: Rama de Actividad Económica (Clasificador CAEB) de la actividad principal y secundaria.
+`pet`  : Población en Edad de Trabajar.
+`pea`  : Población Económicamente Activa.
+`pei`  : Población Económicamente Inactiva.
+`condact`  : Condición de actividad (1 = Ocupado, 2 = Desocupado, 3 = Inactivo).
+`phrs` / `shrs` / `tothrs  `: Horas trabajadas por semana (ocupación principal, secundaria y total).
+  Sección 5: Otros Ingresos no Laborales (`s05a_` a `s05c_`)  
+`s05a_01a` - `s05a_04d  `: Ingresos por jubilación, pensiones, alquileres, intereses o remesas.
+`s05b_05aa` - `s05b_06ce  `: Recepción de bonos estatales (Renta Dignidad, Juancito Pinto, Juana Azurduy, etc.).
+`s05c_07` - `s05c_10  `: Transferencias privadas e ingresos extraordinarios.
+  Variables Calculadas de Ingresos, Pobreza y Estructura  
+`totper`  : Total de personas habitando en el hogar.
+`yprilab` / `yseclab  `: Total de ingreso laboral neto (principal y secundario).
+`ylab`  : Total de ingreso laboral individual.
+`ynolab`  : Total de ingreso no laboral individual.
+`yper`  : Ingreso total personal (`ylab` + `ynolab`).
+`yhog`  : Ingreso total sumado de la familia/hogar.
+`yhogpc`  : Ingreso per cápita del hogar (`yhog` / `totper`).
+`z` / `zext  `: Valor monetario de la línea de pobreza moderada y extrema.
+`p0` / `p1` / `p2  `: Indicadores Foster-Greer-Thorbecke de pobreza moderada (Incidencia, Brecha y Severidad).
+`pext0` / `pext1` / `pext2  `: Indicadores FGT de pobreza extrema (Incidencia, Brecha y Severidad).
+`tipohogar`  : Clasificación del hogar por su estructura interna (Unipersonal, Nuclear, Extendido, Compuesto).
