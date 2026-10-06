@@ -1,15 +1,27 @@
-# Archivos de datos brutos de gran tamaño (no indispensables para el sitio web)
-persona.csv
+# Excluir todo excepto lo indispensable para la pagina web (GitHub Pages)
 
-# Archivos temporales de bloqueo de Microsoft Word
+# Scripts y generadores
+*.py
+*.pyc
+*.R
+__pycache__/
+
+# Documentos e informes no web
+*.docx
 ~$*.docx
-*.tmp
+*.txt
+*.md
+!README.md
+INFORME_PREPROCESAMIENTO_EMPLEO.html
 
-# Borradores redundantes anteriores
-INFORME_PREPROCESAMIENTO_EMPLEO_FORMAL.docx
+# Datasets y binarios
+*.csv
+*.rds
 
-# Archivos de sistema y caché
+# Graficos y capturas locales (la web tiene los graficos embebidos en Base64)
+plots/
+
+# Archivos de sistema y temporales
 .DS_Store
 Thumbs.db
-__pycache__/
-*.pyc
+*.tmp
